@@ -1,0 +1,461 @@
+html  { scroll-behavior: smooth;
+
+font-family: "Georgia", serif;
+font-size: 15px;
+letter-spacing: 1px;
+word-spacing: none;
+width: 100%;
+color: rgb(0, 0, 0); /*colore nero*/
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+
+  }
+
+
+
+/* login e registrazione */
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(143,188,143);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(143,188,143);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=date] {
+  width: 20%;
+  padding: 12px;
+  border: 1px solid rgb(143,188,143);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.registerbtn {
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    -webkit-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   -moz-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  background-color: rgb(143,188,143);
+  color: rgb(255,255,255);
+}
+
+.registratibtn:hover, .accedibtn:hover{
+    opacity: 1;
+    background-color: rgb(143,188,143);
+    color: rgb(255,255,255);
+}
+
+.accedibtn, .registratibtn {
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    -webkit-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   -moz-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+}
+
+.accedibtn, .registratibtn{
+    float: left;
+    width: 50%;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.container#accedi{
+    padding: 16px;
+}
+
+
+h5.carosello, p.carosello{
+  font-family: italic;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+
+
+body {
+  background-color: rgb(255,255,255); /*colore bianco*/
+  background-size: cover;
+  width: 100%;
+  color: rgb(255,255,255);
+}
+
+
+
+h1, h2, h3, h4 {
+  font-family:'Lora', serif;
+  color: rgb(0,110,51) ; /* colore forestgreen*/ 
+  text-align: center;
+  font-size: 40px; 
+  display: block;
+  padding: 2px;
+}
+
+
+ol {
+  font-size: 18px;
+  }
+
+.btn {
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   border-radius: 0;
+   color: rgb(143,188,143);
+   font-family: Helvetica;
+   font-size: 40px;
+   font-weight: 100;
+   padding: 35px;
+   background-color: rgb(255,255,255);
+   -webkit-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   -moz-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   border: solid #2F8FDB 5px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: solid #ccc 1px;
+   background: rgb(143,188,143);
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.img-fluid { 
+  max-width: 100%; 
+  height: auto;
+}
+
+/* colonna idee di viaggio */
+.leftcolumn {
+  float: left;
+  width: 70%;
+}
+
+/* colonna destinazioni */
+
+.container .rightcolumn {
+  float: right;
+  width: 30%;
+}
+
+.fakeimg 
+  {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*sezione destinazioni nella home */
+
+#one img {
+  border-radius: 10px;
+  padding:10px;
+  margin:10px;
+  width: 250px;
+  height: 200px;}
+
+/* Venezia */
+#img1 img{
+  border-radius: 10px;
+  padding:10px;
+  margin:10px;
+  width: 250px;
+  height: 200px;}
+
+.container #img1 {
+    width: 300px;
+    position: relative;}
+
+.container #img1 img {
+    width: 100%;}
+
+.container #img1 h3 {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 1px;}
+
+/* Torino */
+#img2 img{
+  border-radius: 10px;
+  padding:10px;
+  margin:10px;
+  width: 250px;
+  height: 200px;}
+
+.container #img2 {
+    width: 300px;
+    position: relative;}
+
+.container #img2 img {
+    width: 100%;}
+
+.container #img2 h3 {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 1px;}
+
+
+
+
+/* Roma */
+#img3 img{
+  border-radius: 10px;
+  padding:10px;
+  margin:10px;
+  width: 250px;
+  height: 200px;}
+
+.container #img3 {
+    width: 300px;
+    position: relative;}
+
+.container #img3 img {
+    width: 100%;}
+
+.container #img3 h3 {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 1px;}
+
+.container #roma {
+  padding:10px;
+  margin:10px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Firenze */
+#img4 img{
+  border-radius: 10px;
+  padding:10px;
+  margin:10px;
+  width: 250px;
+  height: 200px;}
+
+.container #img4 {
+    width: 300px;
+    position: relative;}
+
+.container #img4 img {
+    width: 100%;}
+
+.container #img4 h3 {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 1px;}
+
+
+/* Napoli */
+#img5 img{
+  border-radius: 10px;
+  padding:10px;
+  margin:10px;
+  width: 250px;
+  height: 200px;}
+
+.container #img5 {
+    width: 300px;
+    position: relative;}
+
+.container #img5 img {
+    width: 100%;}
+
+.container #img5 h3 {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 1px;}
+
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  width: 100%;
+}
+
+
+
+h3 {
+  color: black;
+  padding: 20px 50px 30px;
+  border: none;
+
+}
+
+
+p { color: rgb(0, 0, 0);
+  float: left;
+  font-family: times new roman; 
+  font-size: 20px;
+  margin: 0;
+  width: 100%;
+  margin-bottom: none;
+}
+
+
+
+.tabella {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.table {
+  float: left;
+    text-align: center;
+    font-size: 13px;
+}
+
+.indirizzo {
+  float: right;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10%;
+}
+
+.indirizzo-to {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+
+video {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* social media */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+.fa-google {
+  background: #FE2712;
+  color: white;
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+.container, .column, ,img, input[type=submit] {
+    width: 200px;
+  }
+}

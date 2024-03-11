@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family:'Lora', serif;
+  color: rgb(0,110,51) ;
+  font-size: 30px; 
+  display: block;
+  padding: 2px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-color: rgb(143,188,143);
+}
+
+ .btn {
+  background-color: white;
+  color: rgb(143,188,143);
+  -webkit-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   -moz-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+   box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.22);
+  padding: 12px 20px;
+  border: 1px solid;
+  border-color: rgb(143,188,143);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(143,188,143);
+  color: rgb(255,255,255);
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* social media */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+.fa-google {
+  background: #FE2712;
+  color: white;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 360px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
