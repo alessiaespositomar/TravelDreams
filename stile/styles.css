@@ -363,7 +363,6 @@ ol {
   max-width: auto;
 }
 
-
 h3 {
   color: black;
   padding: 20px 50px 30px;
@@ -460,3 +459,9 @@ video {
   color: white;
 }
 
+
+@media (max-width:640px) {
+  .text-center {
+    text-align: left 
+  }
+}
